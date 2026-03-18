@@ -1,0 +1,520 @@
+/* ---------------- GERAL ---------------- */
+
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background:#fff0f6;
+  color:#333;
+}
+
+
+/* ---------------- TOPO ---------------- */
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 40px;
+  background: linear-gradient(90deg, #ffb6d9, #ffcce6);
+}
+
+.logo-dev {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ce1f74;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ff2d8d;
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+header{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  background:#ffe4ec;
+
+  position: relative;
+  overflow: hidden; /* IMPORTANTE pras estrelas */
+}
+
+.header-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:80px;
+  flex-wrap:wrap;
+}
+
+.texto-header{
+  max-width:500px;
+  text-align:center;
+}
+
+header h1{
+  font-size:2.5rem;
+  font-weight:700;
+  margin-bottom:15px;
+  background: linear-gradient(90deg,#ff69b4,#c66be3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header p{
+  font-size:1.2rem;
+  max-width:600px;
+  color:#333;
+}
+.btn-dev{
+  background:white;
+  border:none;
+  padding:10px 30px;
+  border-radius:30px;
+  color:#ff69b4;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-dev:hover{
+  background:#ff69b4;
+  color:white;
+}
+
+/* FOTO */
+
+.foto{
+  background:linear-gradient(90deg,#ff69b4,#c66be3);
+  padding:5px;
+  border-radius:50%;
+  display:inline-block;
+}
+
+.foto-perfil{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+
+/* BOTÕES HEADER */
+
+.botoes-header{
+  display:flex;
+  gap:15px;
+  margin-top:25px;
+}
+
+.btn-header{
+  background:linear-gradient(90deg,#ff69b4,#c66be3);
+  border:none;
+  padding:14px 30px;
+  border-radius:30px;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-header:hover{
+  transform:scale(1.05);
+}
+
+.btn-icon{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ff69b4;
+  text-decoration:none;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.btn-icon:hover{
+  background:#ff1493;
+  color:white;
+  transform:scale(1.1);
+}
+
+/* ---------------- ESTRELAS ---------------- */
+
+.estrelas-inicio span {
+  position: absolute;
+  top: -20px;
+  font-size: 18px;
+  opacity: 0.9;
+  color: #ff4fa3;
+  text-shadow: 0 0 10px #ff4fa3;
+  animation: cair-suave linear infinite;
+}
+
+@keyframes cair-suave {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(20px);
+  }
+}
+
+.estrelas-inicio span:nth-child(1) { left: 5%; animation-duration: 8s; }
+.estrelas-inicio span:nth-child(2) { left: 15%; animation-duration: 12s; }
+.estrelas-inicio span:nth-child(3) { left: 25%; animation-duration: 10s; }
+.estrelas-inicio span:nth-child(4) { left: 35%; animation-duration: 14s; }
+.estrelas-inicio span:nth-child(5) { left: 45%; animation-duration: 9s; }
+.estrelas-inicio span:nth-child(6) { left: 55%; animation-duration: 13s; }
+.estrelas-inicio span:nth-child(7) { left: 65%; animation-duration: 11s; }
+.estrelas-inicio span:nth-child(8) { left: 75%; animation-duration: 15s; }
+.estrelas-inicio span:nth-child(9) { left: 85%; animation-duration: 10s; }
+.estrelas-inicio span:nth-child(10){ left: 95%; animation-duration: 16s; }
+
+
+/* ---------------- SOBRE ---------------- */
+
+.sobre{
+  padding:60px 20px;
+  background:#fff0f5;
+  text-align:center;
+}
+
+.sobre h2{
+  font-size:40px;
+  margin-bottom:20px;
+  background: linear-gradient(90deg,#ff69b4,#c66be3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sobre p{
+  max-width:750px;
+  margin:auto;
+  font-size:18px;
+  line-height:1.7;
+  color:#161616;
+}
+
+.caracteristicas{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.bloco{
+  background:rgb(255, 221, 240);
+  padding:10px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.bloco:hover{
+  transform:translateY(-5px);
+}
+
+.bloco h3{
+  color:#ff69b4;
+}
+
+.bloco p{
+  color:#444;
+}
+
+.bloco i{
+  color:#ff69b4;
+}
+
+
+/* ---------------- PROJETOS ---------------- */
+
+.projetos{
+  padding:60px 20px;
+  background:#ffe4ec;
+}
+
+.projetos h2{
+  text-align:center;
+  font-size:32px;
+  background: linear-gradient(90deg,#ff69b4,#c66be3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projetos-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  justify-content:center;
+}
+
+.projeto-card{
+  width:320px;
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.projeto-card:hover{
+  transform:translateY(-8px);
+}
+
+.projeto-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.projeto-conteudo{
+  padding:20px;
+}
+
+.projeto-conteudo h3{
+  color:#ff69b4;
+}
+
+.techs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.techs span{
+  background:#ffd6ea;
+  color:#d94f9b;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+.projeto-botoes{
+  margin-top:10px;
+  display:flex;
+  gap:10px;
+}
+
+.projeto-botoes a{
+  text-decoration:none;
+  background:linear-gradient(90deg,#ff69b4,#c66be3);
+  color:white;
+  padding:8px 14px;
+  border-radius:10px;
+}
+
+
+/* ---------------- TECNOLOGIAS ---------------- */
+
+.tecnologias{
+  padding:60px 20px;
+  background:#fff0f5;
+  text-align:center;
+}
+
+.tecnologias h2{
+  font-size:32px;
+  background: linear-gradient(90deg,#ff69b4,#c66be3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lista-tech{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+  margin-top:20px;
+}
+
+.tech{
+  background:white;
+  padding:12px 20px;
+  border-radius:20px;
+  font-weight:500;
+  color:#ff69b4;
+}
+
+.tech:hover{
+  background:#ff69b4;
+  color:white;
+}
+
+
+/* ---------------- CONTATO ---------------- */
+
+
+.contato{
+padding:80px 20px;
+background:linear-gradient(180deg,#ffe6f2,#f3dce6);
+text-align:center;
+}
+
+.contato h2{
+font-size:34px;
+color:#ff69b4;
+}
+
+.subtitulo{
+color:#555;
+margin-bottom:40px;
+}
+
+.contato-container{
+display:flex;
+gap:40px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.info{
+background:white;
+padding:30px;
+border-radius:20px;
+width:350px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+text-align:left;
+}
+
+.info h3{
+color:#ff69b4;
+margin-bottom:20px;
+}
+
+.item{
+display:flex;
+align-items:center;
+gap:15px;
+background:#f7eef3;
+padding:15px;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+
+.icone{
+min-width:45px;
+height:45px;
+background:linear-gradient(135deg,#ff69b4,#c66be3);
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:20px;
+flex-shrink:0;
+}
+
+.item span{
+font-size:14px;
+color:#777;
+}
+
+.item p{
+margin:0;
+font-weight:500;
+}
+
+.extra{
+margin-top:20px;
+background:#f7eef3;
+padding:15px;
+border-radius:12px;
+font-size:14px;
+color:#555;
+}
+
+
+.btn-contato{
+  display:block;
+  background: linear-gradient(90deg,#ff69b4,#c66be3);
+  color:white;
+  text-align:center;
+  padding:12px;
+  border-radius:10px;
+  margin-top:10px;
+  text-decoration:none;
+}
+
+
+/* ---------------- RODAPÉ ---------------- */
+.rodape{
+  background: #ffb9df;
+  color: #444;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.estrela{
+  color: #ff2d8d;
+}
+
+.footer-icons{
+  margin: 20px 0;
+}
+
+.footer-icons a{
+  color: #ff2d8d;
+  font-size: 22px;
+  margin: 0 10px;
+  text-decoration: none;
+ 
+  border-radius: 50%;
+  
+}
+
+.footer-icons a:hover{
+  transform: scale(1.1);
+  
+}
+
+.copy{
+  font-size: 14px;
+  
+}
+.dev-it-girl {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+
+  display: inline-block;
+  padding: 8px 18px;
+
+  
+  color:#ff2d8d;
+
+  border-radius: 10px;
+
+  letter-spacing: 1px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+  transition: 0.3s ease;
+}
+
+
