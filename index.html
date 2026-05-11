@@ -1,360 +1,697 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <title>Eduarda | Portfólio</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Eduarda — Dev It Girl</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+ 
+  <canvas id="cvs"></canvas>
 
-  <div class="mouse-stars"></div>
+  <!-- NAV -->
+  <nav>
 
-  <!-- TOPO -->
-  <div class="topo">
-    <h2 class="logo-dev">
-      <span class="estrela">★</span>Dev It Girl<span class="estrela">★</span>
-    </h2>
+    <div class="nav-logo">★ Dev It Girl ★</div>
+    <ul class="nav-links">
 
-    <nav class="menu">
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#tecnologias">Tecnologias</a>
-      <a href="#experiencia">Experiência</a>
-     <a href="#contato">Contato</a>
-    </nav>
-  </div>
+      <li><a href="#home">Início</a></li>
 
-  <!-- HEADER -->
-  <header id="inicio">
+      <li><a href="#sobre">Sobre</a></li>
 
-    <div class="estrelas-inicio">
-      <span>★</span>
-      <span>★</span>
-      <span>★</span>
-      <span>★</span>
-      <span>★</span>
-      <span>★</span>
-      <span>★</span>
-      <span>★</span>
-    </div>
+      <li><a href="#projetos">Projetos</a></li>
 
-    <div class="header-container">
+      <li><a href="#tecnologias">Tecnologias</a></li>
 
-      <div class="foto">
-        <img src="img/image.png" class="foto-perfil">
-      </div>
+      <li><a href="#experiencia">Experiência</a></li>
 
-      <div class="texto-header">
-
-        <button class="btn-dev">
-          <span class="estrela">★</span>Dev It Girl<span class="estrela">★</span>
-        </button>
-
-        <h1>Olá! Eu sou Maria Eduarda</h1>
-
-        <p>
-          Estudante de Ciência da Computação | Desenvolvedora Web em formação |
-          Laravel | PHP | Banco de Dados.
-        </p>
-
-        <div class="botoes-header">
-
-          <button class="btn-header" onclick="mostrarMensagem()">
-            Entre em Contato
-          </button>
-
-          <a href="https://github.com/dudaaxyz" target="_blank" class="btn-icon">
-            <i class="fab fa-github"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/maria-eduarda-b10443207/" target="_blank" class="btn-icon">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-
-          <a href="mailto:maria.eduardaa.dev@gmail.com" class="btn-icon">
-            <i class="fas fa-envelope"></i>
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-  </header>
-
-  <!-- SOBRE -->
-<section class="sobre" id ="sobre">
-  <div class="sobre-container">
-
-    <!-- TEXTO -->
-    <div class="sobre-texto">
-      <p class="sub">QUEM SOU EU</p>
-      <h2>Sobre mim <span class="estrela">★</span></h2>
-
-      <p>
-       Sou estudante de Ciência da Computação com experiência na área de suporte técnico e interesse em desenvolvimento de software. Durante minha trajetória na TI, tive a oportunidade de trabalhar na resolução de problemas técnicos, suporte a usuários e análise de sistemas. Essas experiências fortaleceram minhas habilidades de comunicação, raciocínio lógico e resolução de problemas. Atualmente estou focada em aprofundar meus conhecimentos em desenvolvimento web, trabalhando com tecnologias como PHP, Laravel e banco de dados. Tenho interesse em oportunidades que me permitam evoluir como desenvolvedora e contribuir com soluções tecnológicas eficientes.
-      </p>
-    </div>
-
-    <!-- CARDS (LADO DIREITO) -->
-    <div class="sobre-lateral">
-
-      <div class="card">
-        <div class="card-topo">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>LOCALIZAÇÃO</span>
-        </div>
-        <p>Maceió - Alagoas</p>
-      </div>
-
-      <div class="card">
-        <div class="card-topo">
-          <i class="fas fa-graduation-cap"></i>
-          <span>FORMAÇÃO</span>
-        </div>
-        <p>Ciência da Computação · Uninassau · 7° Semestre (Mar 2023 – Jul 2027)</p>
-      </div>
-
+      <li><a href="#contato">Contato</a></li>
     
+  </nav>
 
-      <div class="card">
-        <div class="card-topo">
-          <i class="fas fa-circle"></i>
-          <p>
-          <span class="status"></span>
-          Disponível para oportunidades de estágio, trainee ou desenvolvedor júnior
+  <!-- HERO -->
+  <section id="home">
+
+    <div class="hero-inner">
+
+      <div class="photo-wrap reveal">
+
+        <div class="photo-ring">
+
+          <div class="photo-inner">
+            <img src="img/image.png" alt="Maria Eduarda">
+          </div>
+
+          <div class="badge-float">
+            ✦ Disponível p/ projetos
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="reveal delay-1">
+
+        <div class="tag-pill">✦ Dev It Girl</div>
+
+        <h1>
+          Olá! Eu sou<br>
+          <em>Maria Eduarda</em>
+        </h1>
+
+        <p class="hero-sub">
+          Estudante de <strong>Ciência da Computação</strong> e desenvolvedora web em formação.<br>
+          Apaixonada por <strong>Laravel · PHP · Banco de Dados</strong>.
         </p>
-                </div>
+
+        <div class="cta-row">
+
+          <a href="#contato" class="btn-pk">
+            Entre em Contato
+          </a>
+
+          <a href="#projetos" class="btn-out">
+            Ver Projetos
+          </a>
+
+          <a
+            href="cv/curriculo.pdf"
+            target="_blank"
+            class="btn-out cv-btn"
+          >
+            <svg viewBox="0 0 24 24" class="icon-sm">
+              <path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/>
+            </svg>
+            Ver CV
+          </a>
+
+          <div class="icon-links">
+
+            <a class="icon-btn" title="GitHub" href="#">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+            </a>
+
+            <a class="icon-btn" title="LinkedIn" href="#">
+              <svg viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+
+            <a
+              class="icon-btn"
+              title="E-mail"
+              href="mailto:maria.eduardaa.dev@gmail.com"
+            >
+              <svg viewBox="0 0 24 24">
+                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.909 1.528-1.146C21.69 2.28 24 3.434 24 5.457z"/>
+              </svg>
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
 
     </div>
 
-  </div>
-</section>
-  <!-- PROJETOS -->
-  <section class="projetos" id="projetos">
-    <h2>Meus Projetos 💗</h2>
-
-    <div class="projetos-container">
-
-      <!-- PROJETO 1 -->
-      <div class="projeto-card">
-        <img src="img/pet-acolhe-preview.png" alt="Preview do projeto Pet Acolhe">
-
-        <div class="projeto-conteudo">
-          <h3>Pet Acolhe</h3>
-
-          <p>
-            Pet Acolhe é um projeto web funcional desenvolvido com Laravel para simulação de uma plataforma de adoção de pets. No sistema, o usuário pode se cadastrar, visualizar animais disponíveis, solicitar adoção, cadastrar pets para doação e realizar doações em dinheiro, com aprovação administrativa das adoções.
-          </p>
-
-          <div class="techs">
-            <span>Laravel</span>
-            <span>PHP</span>
-            <span>Blade</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>PostgreSQL</span>
-          </div>
-
-          <div class="projeto-botoes">
-            <a href="https://meu-site-estagio-1.onrender.com" target="_blank">Ver projeto</a>
-            <a href="https://github.com/dudaaxyz/meu-site-estagio" target="_blank">GitHub</a>
-          </div>
-        </div>
+    <div class="scroll-hint">
+      <div class="mouse">
+        <div class="wheel"></div>
       </div>
-
-      <!-- PROJETO 2 -->
-      <div class="projeto-card">
-        <img src="img/luma.png" alt="Projeto Códigos de Luma">
-
-        <div class="projeto-conteudo">
-          <h3>Códigos de Luma: Contagem Final</h3>
-
-          <p>
-           Códigos de Luma: Contagem Final é um jogo de plataforma desenvolvido no GameMaker Studio. Nele, o jogador controla Luma em uma cidade futurista dominada por máquinas, enfrentando drones e robôs com um pulso eletromagnético (EMP) até chegar à batalha final contra um robô gigante.
-          </p>
-
-          <div class="techs">
-            <span>GameMaker Studio</span>
-            <span>GML</span>
-            <span>Pixel Art</span>
-          </div>
-
-          <div class="projeto-botoes">
-            <a href="https://aleatorioxyz.itch.io/cdigos-de-luma-contagem-final" target="_blank">Ver jogo</a>
-          </div>
-        </div>
-      </div>
-
+      scroll
     </div>
+
   </section>
 
-  <!-- TECNOLOGIAS -->
-  <section class="tecnologias" id="tecnologias">
-    <h2>Tecnologias★</h2>
+  <div class="divider">Sobre</div>
 
-    <div class="caracteristicas">
+  <!-- SOBRE -->
+  <section id="sobre">
 
-      <div class="bloco">
-        <i class="fa-solid fa-code"></i>
-        <h3>Desenvolvimento Web</h3>
-        <p>Criação de sites e sistemas utilizando HTML, CSS, Laravel e PHP.</p>
+    <div class="container">
+
+      <div class="sobre-grid reveal">
+
+        <div>
+
+          <p class="sec-tag">Quem sou eu</p>
+
+          <h2 class="sec-h2">
+            Sobre <em>mim</em> ✦
+          </h2>
+
+          <div class="sobre-bio">
+
+            <p>
+              Sou estudante de <strong>Ciência da Computação</strong>
+              com experiência na área de suporte técnico e interesse em
+              desenvolvimento de software.
+            </p>
+
+            <p>
+              Durante minha trajetória na TI, tive a oportunidade de trabalhar
+              na resolução de problemas técnicos, suporte a usuários e análise
+              de sistemas. Essas experiências fortaleceram minhas habilidades
+              de comunicação, raciocínio lógico e resolução de problemas.
+            </p>
+
+            <p>
+              Atualmente estou focada em aprofundar meus conhecimentos em
+              desenvolvimento web, trabalhando com tecnologias como
+              <strong>PHP, Laravel</strong> e
+              <strong>banco de dados</strong>.
+              Tenho interesse em oportunidades que me permitam evoluir como
+              desenvolvedora e contribuir com soluções tecnológicas eficientes.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="info-cards">
+
+          <div class="info-card">
+
+            <div class="ic-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div>
+              <div class="ic-label">Localização</div>
+              <div class="ic-val">Maceió – Alagoas</div>
+            </div>
+
+          </div>
+
+          <div class="info-card">
+
+            <div class="ic-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div>
+              <div class="ic-label">Formação</div>
+
+              <div class="ic-val">
+                Ciência da Computação · Uninassau<br>
+                7º Semestre (Mar 2023 – Jul 2027)
+              </div>
+            </div>
+
+          </div>
+
+          <div class="info-card">
+
+            <div class="ic-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div>
+              <div class="ic-label">Status</div>
+
+              <div class="ic-val">
+                <span class="avail-dot"></span>
+                Disponível para estágio, trainee ou desenvolvedor júnior
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-
-      <div class="bloco">
-        <i class="fa-solid fa-gamepad"></i>
-        <h3>Game Dev</h3>
-        <p>Experiência criando jogos como parte dos meus estudos em programação.</p>
-      </div>
-
-      <div class="bloco">
-        <i class="fa-solid fa-database"></i>
-        <h3>Banco de Dados</h3>
-        <p>Utilização de PostgreSQL e SQL para organização, consulta e gerenciamento de dados.</p>
-      </div>
-
-      <div class="bloco">
-        <i class="fa-solid fa-database"></i>
-        <h3>Aprendizado Contínuo</h3>
-        <p>Compromisso com a atualização constante das habilidades e conhecimentos na área de tecnologia.</p>
-      </div>
-
-      </div>
-      </section>
-      <!-- Experiência -->
-      <section class="experiencia" id="experiencia">
-        <h2>Experiência Profissional💗</h2>
-        
-          <div class="card-experiencia">
-
-      <span class="badge">Atual</span>
-    <h3>Estagiária de TI → Desenvolvimento de Sistemas</h3>
-    <p class="empresa">Secretaria de Planejamento e Gestão do Estado de Alagoas (SEPLAG)</p>
-
-    <p>
-      Iniciei na área de suporte técnico e atualmente atuo na área de desenvolvimento de sistemas,
-      trabalhando na criação e manutenção de aplicações web.
-    </p>
-
-  <span class="exp-titulo">Atividades</span>
-  <ul>
-    <li>Desenvolvimento e manutenção de sistemas utilizando PHP (Laravel)</li>
-    <li>Criação de interfaces com HTML e CSS</li>
-    <li>Atuação no front-end e back-end</li>
-    <li>Manipulação de bancos de dados</li>
-    <li>Correção de bugs e implementação de melhorias</li>
-    <li>Atendimento e suporte aos usuários internos</li>
-    <li>Manutenção e configuração de computadores</li>
-    <li>Identificação e resolução de problemas técnicos</li>
-  </ul>
 
     </div>
-    </section>
+
+  </section>
+
+  <div class="divider">Projetos</div>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+
+    <div class="container">
+
+      <p class="sec-tag reveal">O que eu criei</p>
+
+      <h2 class="sec-h2 reveal">
+        Meus <em>Projetos</em>
+      </h2>
+
+      <div class="proj-grid reveal">
+
+        <div class="proj-card">
+
+          <div class="proj-thumb thumb-pet">
+
+            <div class="photo-inner">
+            <img src="img/pet-acolhe-preview.png" alt="Maria Eduarda">
+          </div>
+
+            <div class="proj-thumb-label">
+              Pet Acolhe
+            </div>
+
+          </div>
+
+          <div class="proj-body">
+
+            <div class="proj-title">
+              Pet Acolhe
+            </div>
+
+            <p class="proj-desc">
+              Plataforma web de adoção de pets desenvolvida com Laravel.
+              Usuários podem se cadastrar, visualizar animais disponíveis,
+              solicitar adoção, cadastrar pets para doação e realizar
+              doações em dinheiro.
+            </p>
+
+            <div class="proj-tags">
+              <span class="proj-tag">Laravel</span>
+              <span class="proj-tag">PHP</span>
+              <span class="proj-tag">Blade</span>
+              <span class="proj-tag">HTML</span>
+              <span class="proj-tag">CSS</span>
+              <span class="proj-tag">PostgreSQL</span>
+            </div>
+
+            <div class="proj-btns">
+
+              <a href="#" class="btn-pk proj-btn">
+                Ver projeto
+              </a>
+
+              <a href="#" class="btn-out proj-btn">
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="proj-card">
+
+          <div class="proj-thumb thumb-luma">
+
+            <div class="photo-inner">
+            <img src="img/luma.png" alt="Maria Eduarda">
+          </div>
+
+
+            <div class="proj-thumb-label">
+              Códigos de Luma
+            </div>
+
+          </div>
+
+          <div class="proj-body">
+
+            <div class="proj-title">
+              Códigos de Luma: Contagem Final
+            </div>
+
+            <p class="proj-desc">
+              Jogo de plataforma desenvolvido no GameMaker Studio.
+              O jogador controla Luma em uma cidade futurista dominada
+              por máquinas, enfrentando drones e robôs com um pulso
+              eletromagnético (EMP).
+            </p>
+
+            <div class="proj-tags">
+              <span class="proj-tag">GameMaker Studio</span>
+              <span class="proj-tag">GML</span>
+              <span class="proj-tag">Pixel Art</span>
+            </div>
+
+            <div class="proj-btns">
+
+              <a href="#" class="btn-pk proj-btn">
+                Ver jogo
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="divider">Tecnologias</div>
+
+  <!-- TECNOLOGIAS -->
+  <section id="tecnologias">
+
+    <div class="container">
+
+      <p class="sec-tag reveal">
+        Ferramentas & habilidades
+      </p>
+
+      <h2 class="sec-h2 reveal">
+        Tecnologias <em>★</em>
+      </h2>
+
+      <div class="tech-area-grid reveal">
+
+        <div class="tech-area">
+
+          <div class="tech-area-icon">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+
+          <div class="tech-area-name">
+            Desenvolvimento Web
+          </div>
+
+          <div class="tech-area-desc">
+            Sites e sistemas com HTML, CSS, Laravel e PHP.
+          </div>
+
+        </div>
+
+        <div class="tech-area">
+
+          <div class="tech-area-icon">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+
+          <div class="tech-area-name">
+            Game Dev
+          </div>
+
+          <div class="tech-area-desc">
+            Criação de jogos como parte dos estudos em programação.
+          </div>
+
+        </div>
+
+        <div class="tech-area">
+
+          <div class="tech-area-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <div class="tech-area-name">
+            Banco de Dados
+          </div>
+
+          <div class="tech-area-desc">
+            PostgreSQL e SQL para organização e consulta de dados.
+          </div>
+
+        </div>
+
+        <div class="tech-area">
+
+          <div class="tech-area-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <div class="tech-area-name">
+            Aprendizado Contínuo
+          </div>
+
+          <div class="tech-area-desc">
+            Compromisso com atualização constante em tecnologia.
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="chip-row reveal">
+
+        <span class="chip">Laravel</span>
+        <span class="chip">PHP</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">Bootstrap</span>
+        <span class="chip">Git</span>
+        <span class="chip">GitHub</span>
+        <span class="chip">REST API</span>
+        <span class="chip">MVC</span>
+        <span class="chip">Linux</span>
+        <span class="chip">GameMaker Studio</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="divider">Experiência</div>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia">
+
+    <div class="container">
+
+      <p class="sec-tag reveal">
+        Trajetória profissional
+      </p>
+
+      <h2 class="sec-h2 reveal">
+        Experiência <em>Profissional</em>
+      </h2>
+
+      <div class="exp-card reveal">
+
+        <span class="exp-badge">
+          Atual
+        </span>
+
+        <div class="exp-role">
+          Estagiária de TI → Desenvolvimento de Sistemas
+        </div>
+
+        <div class="exp-org">
+          Secretaria de Planejamento e Gestão do Estado de Alagoas (SEPLAG)
+        </div>
+
+        <p class="exp-desc">
+          Iniciei na área de suporte técnico e atualmente atuo na área
+          de desenvolvimento de sistemas, trabalhando na criação e
+          manutenção de aplicações web.
+        </p>
+
+        <div class="exp-activities-label">
+          Atividades
+        </div>
+
+        <ul class="exp-list">
+
+          <li>
+            Desenvolvimento e manutenção de sistemas utilizando PHP (Laravel)
+          </li>
+
+          <li>
+            Criação de interfaces com HTML e CSS
+          </li>
+
+          <li>
+            Atuação no front-end e back-end
+          </li>
+
+          <li>
+            Manipulação de bancos de dados
+          </li>
+
+          <li>
+            Correção de bugs e implementação de melhorias
+          </li>
+
+          <li>
+            Atendimento e suporte aos usuários internos
+          </li>
+
+          <li>
+            Manutenção e configuração de computadores
+          </li>
+
+          <li>
+            Identificação e resolução de problemas técnicos
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="divider">Contato</div>
 
   <!-- CONTATO -->
-  <section class="contato" id="contato">
+  <section id="contato">
 
-  <h2>Vamos Conversar?★</h2>
-  <p class="subtitulo">
-    Descubra meus projetos!
-  </p>
+    <div class="container">
 
-  <div class="contato-container">
+      <p class="sec-tag reveal">
+        Vamos conversar?
+      </p>
 
-    <!-- INFO CONTATO -->
-    <div class="info">
+      <h2 class="sec-h2 reveal">
+        Entre em <em>Contato ★</em>
+      </h2>
 
-      <h3>Informações de Contato</h3>
+      <div class="contato-grid reveal">
 
-      <div class="item">
-        <div class="icone"><i class="fa-solid fa-envelope"></i></div>
         <div>
-          <span>Email</span>
-          <p>maria.eduardaa.dev@gmail.com</p>
+
+          <div class="contato-info">
+
+            <div class="contato-card">
+
+              <div class="cc-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+
+              <div>
+                <div class="cc-label">Email</div>
+                <div class="cc-val">
+                  maria.eduardaa.dev@gmail.com
+                </div>
+              </div>
+
+            </div>
+
+            <div class="contato-card">
+
+              <div class="cc-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div>
+                <div class="cc-label">Telefone</div>
+                <div class="cc-val">
+                  +55 (82) 99401-1511
+                </div>
+              </div>
+
+            </div>
+
+            <div class="contato-card">
+
+              <div class="cc-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div>
+                <div class="cc-label">Localização</div>
+                <div class="cc-val">
+                  Maceió, Brasil
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
-      </div>
 
-      <div class="item">
-        <div class="icone"><i class="fa-solid fa-phone"></i></div>
-        <div>
-          <span>Telefone</span>
-          <p>+55 (82) 99401-1511</p>
+        <div class="contato-right">
+
+          <div class="contato-msg">
+            "Estou sempre aberta a novos projetos e oportunidades de colaboração.
+            Seja para um freelance, full-time ou apenas trocar uma ideia sobre
+            tech e design!
+            <i class="fa-solid fa-heart heart-pink"></i>
+          </div>
+
+          <div class="contato-btns">
+
+            <a
+              href="https://wa.me/5582994011511"
+              class="btn-pk text-center"
+            >
+              Falar no WhatsApp →
+            </a>
+
+            <a
+              href="mailto:maria.eduardaa.dev@gmail.com"
+              class="btn-out text-center"
+            >
+              Enviar e-mail →
+            </a>
+
+          </div>
+
         </div>
+
       </div>
 
-      <div class="item">
-        <div class="icone"><i class="fa-solid fa-location-dot"></i></div>
-        <div>
-          <span>Localização</span>
-          <p>Maceió, Brasil</p>
-        </div>
-      </div>
+    </div>
 
-      <div class="extra">
-        Estou sempre aberta a novos projetos e oportunidades de colaboração. Seja para um freelance, full-time ou apenas trocar uma ideia sobre tech e design!❤️ 
-      </div>
+  </section>
 
-      <a href="https://wa.me/5582994011511?subject=Contato pelo portfólio&body=Olá, vi seu portfólio e gostaria de entrar em contato com você." target="_blank" class="btn-contato">
-        Falar no WhatsApp ✈
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      ★ Dev It Girl ★
+    </div>
+
+    <p class="footer-quote">
+      "O código é a tinta que colore o futuro digital,
+      e cada linha escrita é um passo para transformar
+      ideias em realidade."
+    </p>
+
+    <div class="footer-links">
+
+      <a class="icon-btn" title="GitHub" href="#">
+        <svg viewBox="0 0 24 24" class="icon-footer">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
       </a>
 
-      <a href="mailto:maria.eduardaa.dev@gmail.com?subject=Contato pelo portfólio&body=Olá, vi seu portfólio e gostaria de entrar em contato com você." class="btn-contato">
-        Enviar e-mail ✈
+      <a class="icon-btn" title="LinkedIn" href="#">
+        <svg viewBox="0 0 24 24" class="icon-footer">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+
+      <a
+        class="icon-btn"
+        title="Email"
+        href="mailto:maria.eduardaa.dev@gmail.com"
+      >
+        <svg viewBox="0 0 24 24" class="icon-footer">
+          <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.909 1.528-1.146C21.69 2.28 24 3.434 24 5.457z"/>
+        </svg>
       </a>
 
     </div>
 
-  </div>
+    <div class="footer-copy">
+      ★ © 2026 Dev It Girl — Maria Eduarda ★
+    </div>
 
-</section>
+  </footer>
 
-  <!-- RODAPÉ -->
-  <footer class="rodape">
-  
-  <h1 class="dev-it-girl ">★ Dev It Girl ★</h1>
-
-  <p>
-    Criando experiências digitais com estilo, tecnologia e muito amor pelo código
-  </p>
-
-  <div class="footer-icons">
-    <a href="https://github.com/dudaaxyz" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/in/maria-eduarda-b10443207/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="mailto:maria.eduardaa.dev@gmail.com">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
-
-  <p>
-    "O código é a tinta que colore o futuro digital, e cada linha escrita é um passo para transformar ideias em realidade."
-  </p>
-
-  <hr>
-
-  <p class="copy">
-    <span class="estrela">★</span> © 2026 Dev It Girl <span class="estrela">★</span>
-  </p>
-
-</footer>
-
-  <!-- SCRIPT -->
-<script src="estrelas.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
-
-
