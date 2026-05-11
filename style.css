@@ -1080,3 +1080,120 @@ footer {
 .delay-1 {
   animation-delay: .15s;
 }
+/* ===== RESPONSIVO MOBILE ===== */
+
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #home {
+    padding: 5rem 1.25rem 3rem;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-sub {
+    max-width: 100%;
+  }
+
+  .cta-row {
+    justify-content: center;
+  }
+
+  .icon-links {
+    justify-content: center;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  #sobre,
+  #projetos,
+  #tecnologias,
+  #experiencia,
+  #contato {
+    padding: 3.5rem 0;
+  }
+
+  .sobre-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .proj-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-area-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-card {
+    padding: 1.3rem;
+  }
+
+  .exp-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: .8rem;
+  }
+
+  .divider {
+    padding: .8rem 1.25rem;
+  }
+
+  footer {
+    padding: 2rem 1.25rem;
+  }
+}
+
+/* Mobile pequeno (≤ 480px) */
+@media (max-width: 480px) {
+
+  .photo-ring {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .tech-area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proj-btns {
+    flex-direction: column;
+  }
+
+  .proj-btn {
+    text-align: center;
+  }
+
+  .btn-pk,
+  .btn-out {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cv-btn {
+    justify-content: center;
+  }
+}
